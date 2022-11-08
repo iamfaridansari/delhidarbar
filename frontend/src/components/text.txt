@@ -1,0 +1,17 @@
+url
+http://jafferbhaiscatering.com/
+
+cpanel
+https://162.241.69.132:2083/
+
+username
+jafferbhaiscater
+
+password
+jbddc@123#gst
+
+contact
+https://jafferbhaiscatering.com/backend/api/contactus
+
+enquiry
+https://jafferbhaiscatering.com/backend/api/enquiry
