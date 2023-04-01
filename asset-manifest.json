@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/delhidarbar/static/css/main.911e3a1f.css",
+    "main.js": "/delhidarbar/static/js/main.d4b16618.js",
+    "static/media/image3.jpg": "/delhidarbar/static/media/image3.82cdd6e40e6347389416.jpg",
+    "static/media/image11.jpg": "/delhidarbar/static/media/image11.4bdd7a10b87211727317.jpg",
+    "static/media/image6.jpg": "/delhidarbar/static/media/image6.08eb9cd1dfba9de21303.jpg",
+    "static/media/image4.jpg": "/delhidarbar/static/media/image4.508577eb96d5927bd4ff.jpg",
+    "static/media/image7.jpg": "/delhidarbar/static/media/image7.1612c0bf104a1aaea41d.jpg",
+    "static/media/image12.jpg": "/delhidarbar/static/media/image12.437104aae9a8c70d4d90.jpg",
+    "static/media/user.jpg": "/delhidarbar/static/media/user.07cdabf02a1a7e6896b4.jpg",
+    "static/media/banner.png": "/delhidarbar/static/media/banner.56e0dd6b34c059f688a1.png",
+    "static/media/image8.jpg": "/delhidarbar/static/media/image8.a99c6dc0bdf3c67c3123.jpg",
+    "static/media/image9.jpg": "/delhidarbar/static/media/image9.2587098c9109d084b4f7.jpg",
+    "static/media/image1.jpg": "/delhidarbar/static/media/image1.e82029136a6b11d72fea.jpg",
+    "static/media/image5.jpg": "/delhidarbar/static/media/image5.6f2ce7d35abd78088014.jpg",
+    "static/media/image2.jpg": "/delhidarbar/static/media/image2.8e9fbcaedd86c4b55de6.jpg",
+    "static/media/image10.jpg": "/delhidarbar/static/media/image10.afe07972d1c87b145b76.jpg",
+    "static/media/Raleway.ttf": "/delhidarbar/static/media/Raleway.3927fa2a37e6f7f4c7c0.ttf",
+    "static/media/Square Peg.ttf": "/delhidarbar/static/media/Square Peg.381be1381bbd94205c6f.ttf",
+    "static/media/sample.png": "/delhidarbar/static/media/sample.8aa02be8159a1fe8f70a.png",
+    "static/media/Josefin Sans.ttf": "/delhidarbar/static/media/Josefin Sans.7d788b889d3f61f984c8.ttf",
+    "static/media/panchganiOutlet.webp": "/delhidarbar/static/media/panchganiOutlet.748bbabd0645bc6e4e29.webp",
+    "static/media/sample2.png": "/delhidarbar/static/media/sample2.f3839d6b1aeaa9ed6254.png",
+    "static/media/noorbaugOutlet.webp": "/delhidarbar/static/media/noorbaugOutlet.0873886acce8a50bb899.webp",
+    "static/media/jaffer.jpeg": "/delhidarbar/static/media/jaffer.aa4bef8870490e48ecb9.jpeg",
+    "index.html": "/delhidarbar/index.html",
+    "main.911e3a1f.css.map": "/delhidarbar/static/css/main.911e3a1f.css.map",
+    "main.d4b16618.js.map": "/delhidarbar/static/js/main.d4b16618.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.911e3a1f.css",
+    "static/js/main.d4b16618.js"
+  ]
+}
