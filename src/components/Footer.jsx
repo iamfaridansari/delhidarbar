@@ -1,7 +1,6 @@
 import React from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import logo from "../assets/image/logo.png";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -35,45 +34,11 @@ const Footer = () => {
               <FaEnvelope className="me-2" /> info@jafferbhaiscatering.com
             </a>
           </div>
-          <div className="col-md">
-            <ul className="footerLinks">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/">About Us</Link>
-              </li>
-              <li>
-                <Link to="/">Services</Link>
-              </li>
-              <li>
-                <Link to="/">Menu</Link>
-              </li>
-              <li>
-                <Link to="/">Outlets</Link>
-              </li>
-              {/* <li>
-                <Link to="/">Awards</Link>
-              </li>
-              <li>
-                <Link to="/">Press Release</Link>
-              </li> */}
-              <li>
-                <Link to="/">Catering</Link>
-              </li>
-              <li>
-                <Link to="/">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/">Contact us</Link>
-              </li>
-            </ul>
-          </div>
           <div className="col-md p-0 text-end">
             <div className="logo mx-auto">
               <img src={logo} alt="" />
             </div>
-            <p className="text-center">Powered by Interlink Consultant</p>
+            <p className="text-center">Developed by <a href="mailto:iamfaridansari@gmail.com" className="fw-bold">Farid Ansari</a></p>
           </div>
         </div>
         <div className="text-center">

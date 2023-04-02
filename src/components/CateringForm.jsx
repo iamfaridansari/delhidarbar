@@ -38,7 +38,7 @@ const CateringForm = () => {
     date: "",
     people: "",
     budget: "",
-    cateringType: "",
+    type: "",
     message: "",
   });
   const handleInput = (e) => {
@@ -51,24 +51,56 @@ const CateringForm = () => {
   const handleRadio = (value) => {
     setInput({
       ...input,
-      cateringType: value
-    })
-  }
+      type: value,
+    });
+  };
 
-  const [message, setMessage] = useState("")
-  const [success, setSuccess] = useState(null)
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
 
   const submitForm = async (e) => {
     e.preventDefault();
+    //
+    const { name, phone, email, company, date, people, budget, type, message } =
+      input;
+    try {
+      const res = await fetch("/delhidarbar", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          phone,
+          email,
+          company,
+          date,
+          people,
+          budget,
+          type,
+          message,
+        }),
+      });
+      const data = await res.json();
+      console.log(data);
+      setMessage(data.message);
+      if (res.status === 200) {
+        setSuccess(true);
+      } else if (res.status === 422) {
+        setSuccess(false);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
     if (message !== "") {
       setTimeout(() => {
-        setMessage("")
-      }, [5000])
+        setMessage("");
+      }, [5000]);
     }
-  }, [message])
+  }, [message]);
   return (
     <form
       className="container mb-5"
@@ -111,7 +143,7 @@ const CateringForm = () => {
             <input
               type="text"
               className="input"
-              placeholder="Company name (if any)"
+              placeholder="Company name"
               name="company"
               value={input.company}
               onChange={handleInput}
@@ -161,10 +193,10 @@ const CateringForm = () => {
             {typeofcatering.map((item, index) => {
               return (
                 <div className="col-6" key={index}>
-                  <label className="cateringType">
+                  <label className="type">
                     <input
                       type="radio"
-                      name="cateringType"
+                      name="type"
                       className="me-2"
                       value={item.name}
                       onClick={() => handleRadio(item.name)}
@@ -185,8 +217,8 @@ const CateringForm = () => {
           ></textarea>
         </div>
       </div>
-      <div className="text-center mt-5">
-        <h2 className={success ? "text-success" : "text-danger"}>{message}</h2>
+      <div className="text-center mt-4">
+        <p className={success ? "text-success mb-2" : "text-danger mb-2"}>{message}</p>
         <button className="button">Send Enquiry</button>
       </div>
     </form>

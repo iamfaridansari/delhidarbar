@@ -38,7 +38,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav className="containet-fluid p-2 shadow">
-      <div className="d-flex align-items-start justify-content-between gap-4">
+      <div className="d-flex align-items-center justify-content-between gap-4">
         {/*  */}
         <Link to="/" className="logo" ref={logoRef} onClick={scrollToTop}>
           <img src={logo} alt="" />
@@ -98,28 +98,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/menu" onClick={scrollToTop}>
-                Menu
-              </NavLink>
-            </li>
-            <li>
               <NavLink to="/outlets" onClick={scrollToTop}>
                 Outlets
-              </NavLink>
-            </li>
-            {/* <li>
-              <NavLink to="/awards" onClick={scrollToTop}>
-                Awards
-              </NavLink>
-            </li> */}
-            {/* <li>
-              <NavLink to="/pressreleases" onClick={scrollToTop}>
-                Press Releases
-              </NavLink>
-            </li> */}
-            <li>
-              <NavLink to="/catering" onClick={scrollToTop}>
-                Catering
               </NavLink>
             </li>
             <li>
@@ -128,8 +108,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" onClick={scrollToTop}>
-                Contact us
+              <NavLink to="/catering" onClick={scrollToTop}>
+                Contact
               </NavLink>
             </li>
             <div className="closeNav d-lg-none" onClick={toggleNavbar}>

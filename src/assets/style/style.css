@@ -237,121 +237,11 @@ header .navbar2 li a.active {
 .testContainer::-webkit-scrollbar-thumb {
   display: none;
 }
-/*  */
-.serviceBanner,
-.awardBanner,
-.aboutBanner,
-.outletBanner,
-.menuBanner,
-.pressBanner,
-.cateringBanner,
-.galleryBanner,
-.contactBanner,
-.serviceDetailBanner {
-  width: 100%;
-  height: 50vh;
-  /* background-attachment: fixed; */
-  position: relative;
-  display: grid;
-  place-items: center;
-}
-.aboutBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-.serviceBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-.menuBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-.outletBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-.awardBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-.pressBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-.cateringBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-.galleryBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-.contactBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-.serviceDetailBanner {
-  background: linear-gradient(#0000004d, #0000004d),
-    url(../image/banner.png) center no-repeat;
-  background-size: cover;
-}
-
-/*  */
-.outletBanner form {
-  width: 576px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px #333;
-}
-.outletBanner form input {
-  width: 100%;
-  padding: 8px 10px;
-  border: none;
-  outline: none;
-  background: #fff;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-.outletBanner form button {
-  padding: 8px 10px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border: none;
-  outline: none;
-  background: var(--yellow);
-  color: #fff;
-}
-/*  */
 .topic {
   text-transform: uppercase;
   color: #fff;
   transform: translateY(150%);
   border-bottom: 2px solid var(--yellow);
-}
-.awardsContainer {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  align-items: flex-start;
-  justify-content: center;
-  gap: 25px;
-  margin-bottom: 50px;
 }
 .jaffer img {
   border-radius: 50%;
@@ -391,42 +281,6 @@ header .navbar2 li a.active {
   align-items: flex-start;
   justify-content: center;
   gap: 25px;
-}
-.menuContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-.menuContainer .menuItem {
-  position: relative;
-  height: 350px;
-  overflow: hidden;
-}
-.menuContainer .menuItem img {
-  height: 100%;
-}
-.menuContainer .menuItem .overlay {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transform: scale(1.5);
-  opacity: 0;
-  position: absolute;
-  display: grid;
-  place-items: center;
-  background: #00000061;
-  transition: var(--transition);
-  text-align: center;
-}
-.menuContainer .menuItem .overlay.active {
-  transform: scale(1);
-  opacity: 1;
-}
-.menuContainer .menuItem .overlay h1 {
-  color: #fff;
-  text-transform: capitalize;
 }
 .input {
   border: none;
@@ -490,27 +344,6 @@ header .navbar2 li a.active {
 .galleryContainer .long {
   grid-row: span 2;
 }
-.reviewContainer {
-  width: 100%;
-  height: auto;
-}
-.reviewContainer .reviewGrid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.reviewContainer .reviewGrid:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.reviewContainer .reviewGrid .left,
-.reviewContainer .reviewGrid .right {
-  width: 50%;
-  max-height: 370px;
-  overflow: hidden;
-}
-.reviewContainer .reviewGrid .left {
-  padding: 50px;
-}
 .scrollToTop {
   position: fixed;
   right: -50px;
@@ -527,12 +360,6 @@ header .navbar2 li a.active {
 }
 footer {
   background: #fcfcfc;
-}
-.footerLinks {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: space-between;
 }
 .services img {
   width: 100%;

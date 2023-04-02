@@ -1,14 +1,8 @@
-@media screen and (max-width: 1280px) {
-  .reviewContainer .reviewGrid .left {
-    padding: 10px;
-  }
-}
 @media screen and (max-width: 1200px) {
   .outletContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media screen and (max-width: 992px) {
   header .navbar1,
   header .navbar2 {
@@ -45,22 +39,6 @@
     place-items: center;
     cursor: pointer;
   }
-  .menuContainer {
-    grid-template-columns: repeat(2, 1fr);
-    overflow: hidden;
-  }
-  .reviewContainer .reviewGrid {
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-  .reviewContainer .reviewGrid:nth-child(even) {
-    flex-direction: column;
-  }
-  .reviewContainer .reviewGrid .left,
-  .reviewContainer .reviewGrid .right {
-    width: 100%;
-    max-height: auto;
-  }
   header p {
     transform: translateX(0);
   }
@@ -75,9 +53,6 @@
   }
   .outletBanner form {
     width: 90%;
-  }
-  .menuContainer {
-    grid-template-columns: 1fr;
   }
   .galleryContainer {
     grid-template-columns: repeat(2, 1fr);
@@ -102,13 +77,6 @@
     width: 200px;
     height: 200px;
   }
-  .testCard .user img {
-    width: 75px;
-    height: 75px;
-  }
-  .testCard .text {
-    padding-top: 15px;
-  }
   .home1 {
     height: calc(100vh - 89.91px);
   }
@@ -119,17 +87,6 @@
   }
   h2 {
     font-size: 1.25rem;
-  }
-  p,
-  a,
-  ul,
-  li,
-  input,
-  button,
-  label,
-  textarea,
-  select {
-    font-size: 0.8rem;
   }
   .jaffer img {
     width: 200px;

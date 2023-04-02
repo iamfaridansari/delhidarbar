@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import { services, testimonial, tagline, fineDine } from "../components/data";
+import { services, fineDine, tagline } from "../components/data";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -28,16 +27,6 @@ const Home = () => {
       titleRef.current.push(item);
     }
   };
-
-  //
-  const testCard = useRef([]);
-  testCard.current = [];
-  const addTest = (item) => {
-    if (item && !testCard.current.includes(item)) {
-      testCard.current.push(item);
-    }
-  };
-
   //
   const service = useRef([]);
   service.current = [];
@@ -100,19 +89,6 @@ const Home = () => {
       },
     });
     //
-    testCard.current.forEach((item) => {
-      gsap.from(item, {
-        scale: 0.7,
-        opacity: 0.5,
-        scrollTrigger: {
-          trigger: item,
-          start: "top 80%",
-          toggleActions: "play none none reverse",
-        },
-        stagger: 1,
-      });
-    });
-    //
     service.current.forEach((item) => {
       gsap.from(item, {
         scale: 0.7,
@@ -169,33 +145,6 @@ const Home = () => {
           })}
         </div>
       </div>
-
-      {/* how we work */}
-      {/* <div className="container-fluid p-0 howWeWork mb-5"></div> */}
-
-      {/* testimonial */}
-      {/* <div className="container text-center overflow-hidden">
-        <h2 className="text-uppercase mb-2" ref={testHead}>
-          Testimonial
-        </h2>
-        <p>See what our clients say about us</p>
-
-        <div className="container d-flex overflow-auto testContainer">
-          {testimonial.map((item, index) => {
-            return (
-              <div className="testCard rounded" key={index} ref={addTest}>
-                <div className="user">
-                  <img src={item.img} alt="" />
-                  <h2 className="my-2">{item.name}</h2>
-                </div>
-                <div className="text">
-                  <p>{item.review}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
     </>
   );
 };
