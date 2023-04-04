@@ -64,7 +64,7 @@ const CateringForm = () => {
     const { name, phone, email, company, date, people, budget, type, message } =
       input;
     try {
-      const res = await fetch("/delhidarbar", {
+      const res = await fetch("/api/post/delhidarbar/form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -218,7 +218,9 @@ const CateringForm = () => {
         </div>
       </div>
       <div className="text-center mt-4">
-        <p className={success ? "text-success mb-2" : "text-danger mb-2"}>{message}</p>
+        <p className={success ? "text-success mb-2" : "text-danger mb-2"}>
+          {message}
+        </p>
         <button className="button">Send Enquiry</button>
       </div>
     </form>
