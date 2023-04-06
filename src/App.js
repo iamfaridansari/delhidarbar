@@ -11,20 +11,23 @@ import Gallery from "./pages/Gallery";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { AppContextProvider } from "./context/AppContext";
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/outlets" element={<Outlets />} />
-        <Route path="/catering" element={<Catering />} />
-        <Route path="/gallery" element={<Gallery />} />
-      </Routes>
-      <ScrollToTop />
-      <Footer />
+      <AppContextProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/outlets" element={<Outlets />} />
+          <Route path="/catering" element={<Catering />} />
+          <Route path="/gallery" element={<Gallery />} />
+        </Routes>
+        <ScrollToTop />
+        <Footer />
+      </AppContextProvider>
     </>
   );
 };

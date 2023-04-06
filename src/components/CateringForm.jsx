@@ -1,9 +1,11 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useContext } from "react";
+import { AppContext } from "../context/AppContext";
 import { typeofcatering } from "./data";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 const CateringForm = () => {
+  const backendAPI = useContext(AppContext);
   gsap.registerPlugin(ScrollTrigger);
   const leftRef = useRef(null);
   const rightRef = useRef(null);
@@ -64,7 +66,7 @@ const CateringForm = () => {
     const { name, phone, email, company, date, people, budget, type, message } =
       input;
     try {
-      const res = await fetch("/api/post/delhidarbar/form", {
+      const res = await fetch(backendAPI + "/api/post/delhidarbar/form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
